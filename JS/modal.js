@@ -20,4 +20,12 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
+// Fonction pour fermer le modale
+
+function closeModal() {
+  modalBtn.style.display = "none";
+}
+
+closeBtn.addEventListener("click", closeModal)
+
 
