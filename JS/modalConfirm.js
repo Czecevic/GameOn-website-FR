@@ -3,7 +3,7 @@
 const btnSubmit = document.querySelector(".btn-submit");
 const modalConfirmation = document.querySelector(".formConfirmation");
 const spanValidModal = document.querySelector(".formConfirmation > span");
-const btnSubmitConfirm = document.querySelector(".btn-submit-confirm");
+const btnSubmitConfirm = document.querySelector(".close");
 
 /**
  * Fonction pour ouvrir la modale de confirmation d'inscription
