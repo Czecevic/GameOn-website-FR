@@ -1,3 +1,5 @@
+
+// affiche le li si le responsive est "activé"
 function editNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -9,20 +11,16 @@ function editNav() {
   
   const form = document.querySelector("form");
   
-  /**
-   * Bouton de soumission du formulaire "c'est parti"
-   */
+  // Bouton de soumission du formulaire "c'est parti"
   const submitInput = form[form.length - 1];
   
-  /**
-   * On point les inputs par leur id
-   */
+  // On point les inputs par leur id
   const inputs = document.querySelectorAll(
     "#first, #last, #email, #birthdate, #quantity, input[name=location] , #checkbox1 "
   );
   
   /**
-   * Fonction qui permet d'évoluer dans chacun des inputs
+   * Fonction qui permet d'évoluer dans chacun des inputs demandés
    * @param {*} e - object event
    * @param {*} e.target.value - value de l'input
    */

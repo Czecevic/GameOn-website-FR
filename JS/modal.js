@@ -1,17 +1,19 @@
+// fait apparaitre la modale
 const modalBtn = document.querySelectorAll(".modal-btn");
-const closeBtn = document.querySelector(".close")
+// ferme la modale
+const closeBtn = document.querySelector(".close");
+// 
 const modalbg = document.querySelector(".bground");
 
-// launch modal event
+// lance la fonction launchModal
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
-// launch modal form
+// affiche la fenêtre modale
 function launchModal() {
   modalbg.style.display = "block";
 }
 
-// Fonction pour fermer le modale
-
+// Fonction pour fermer la fenêtre modale
 function closeModal() {
   modalbg.style.display = "none";
 }
