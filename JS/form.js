@@ -178,7 +178,7 @@ function editNav() {
   
   /**
    * function checkbox cgv
-   * @returns
+   * @returns - true
    */
   const checkboxChecker = () => {
     const errorDisplay = document.querySelector(".formData > div");

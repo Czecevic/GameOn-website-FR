@@ -106,9 +106,8 @@ img {
     color: white;
     border-radius: 25px;
     position: absolute;
-    margin-top: 15px;
-    top: 0;
-    right: 0;
+    margin-top: 0px;
+    background-color: #f00;
   }
   .topnav.responsive a {
     float: none;
@@ -124,7 +123,7 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    margin-top: 0px;
   }
 } 
 
@@ -651,8 +650,9 @@ footer {
       text-align: left;
     }
     .topnav a.icon {
-      margin-top: -10px;
+      margin-top: 0px;
       color: red;
+      background-color: white;
     }
     img{
       width: 70%;
@@ -684,8 +684,9 @@ footer {
     .topnav a.icon {
       float: right;
       display: block;
-      margin-top: -10px;
+      margin-top: 0px;
       color: red;
+      background-color: white;
     }
     .hero-section > .btn-signup {
       padding: 15px 30px;
@@ -740,14 +741,15 @@ footer {
 
   @media screen and (max-width: 389px) {
     .topnav a.icon {
-      margin-top: -40px;
+      margin-top: 0px;
     }
   }
 
   @media screen and (max-width: 366px) {
     .topnav a.icon {
-      margin-top: -40px;
+      margin-top: 0px;
       color: red;
+      background-color: white;
     }
     .hero-headline {
       font-size: 1.8rem;
