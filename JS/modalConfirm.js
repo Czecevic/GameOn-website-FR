@@ -19,8 +19,8 @@ btnSubmit.addEventListener("click", launchModalConfirmation);
 
 //Fonction pour fermer la modale de confirmation d'inscription
 function closeModalConfirmation() {
-  modalConfirmation.style.display = "none";
-  closeBtn2.style.display = "none"
+  modalConfirmation.style.display = "block";
+  closeBtn2.style.display = "none";
 }
 
 btnSubmitConfirm.addEventListener("click", closeModalConfirmation);
