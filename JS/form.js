@@ -21,8 +21,8 @@ function editNav() {
   
   /**
    * Fonction qui permet d'évoluer dans chacun des inputs demandés
-   * @param {*} e - object event
-   * @param {*} e.target.value - value de l'input
+   * e - object event
+   * e.target.value - value de l'input
    */
   inputs.forEach((input) => {
     input.addEventListener("input", (e) => {
@@ -52,8 +52,7 @@ function editNav() {
   
   /**
    * function firstname (first)
-   * @param {*} value
-   * @returns - true pour la soumission du formulaire
+   * return - true pour la soumission du formulaire
    */
   const firstChecker = (value) => {
     const firstContainer = document.querySelector(".first-container");
@@ -73,8 +72,7 @@ function editNav() {
   
   /**
    * function name (last)
-   * @param {*} value
-   * @returns - true pour la soumission du formulaire
+   * return - true pour la soumission du formulaire
    */
   const lastChecker = (value) => {
     const lastContainer = document.querySelector(".last-container");
@@ -95,8 +93,7 @@ function editNav() {
   
   /**
    * function email
-   * @param {*} value
-   * @returns - true pour la soumission du formulaire
+   * return - true pour la soumission du formulaire
    */
   const emailChecker = (value) => {
     const emailContainer = document.querySelector(".email-container");
@@ -115,8 +112,7 @@ function editNav() {
   
   /**
    * function birthdate
-   * @param {*} value
-   * @returns - true pour la soumission du formulaire
+   * return - true pour la soumission du formulaire
    */
   const birthdateChecker = (value) => {
     const birthdateContainer = document.querySelector(".birthdate-container");
@@ -135,8 +131,7 @@ function editNav() {
   
   /**
    * function quantity
-   * @param {*} value
-   * @returns - true pour la soumission du formulaire
+   * return - true pour la soumission du formulaire
    */
   const quantityChecker = (value) => {
     const quantityContainer = document.querySelector(".quantity-container");
@@ -155,7 +150,7 @@ function editNav() {
   
   /**
    * function checkbox
-   * @returns - true pour la soumission du formulaire
+   * return - true pour la soumission du formulaire
    */
   const checkboxContainer = () => {
     const errorDisplay = document.querySelector(".formData > small");
@@ -177,8 +172,8 @@ function editNav() {
   };
   
   /**
-   * function checkbox cgv
-   * @returns - true
+   * function checkbox
+   * return - true
    */
   const checkboxChecker = () => {
     const errorDisplay = document.querySelector(".formData > div");
@@ -199,15 +194,15 @@ function editNav() {
   
   /**
    * Vérifier les inputs du formulaire avant sa soumission
-   * @param {*} e - object event
+   * e - object event
    */
   const onSubmit = (e) => {
     e.preventDefault();
   
     /**
      * Récupérer les valeurs des inputs du formulaire
-     * @param {*} inputs - array: les tags du query selector
-     * @returns - array: les données du query selector
+     * inputs - array: les tags du query selector
+     * return - array: les données du query selector
      */
     const formValues = (inputs) => {
       let data = [];
@@ -236,13 +231,12 @@ function editNav() {
   
     /**
      * Vérifie la valeur de chacun des inputs
-     * @param {*} values - array: les données du query selector
-     * @returns - boolean: true si valid
+     * s - array: les données du query selector
+     * return - boolean: true si valid
      */
     const formIsValid = (values) => {
       /**
        * Teste la validité de chaque input
-       * @type boolean
        */
       let validInputs = [];
   
